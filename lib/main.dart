@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
-import 'View/home.dart';
+import 'View/homeView.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomeView(), // ← Scaffoldはこの中に
+      // ← MaterialApp はここに1つだけ
+      title: 'WMM',
+      home: HomeView(),
     );
   }
 }
